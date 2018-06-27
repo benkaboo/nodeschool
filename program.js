@@ -1,4 +1,4 @@
-
+var B = {};
 
 var sum = 0;
 var argsCount = process.argv.length
@@ -11,9 +11,11 @@ console.log(sum);
 
 
 
-function argToNum(argument){
+B.argToNum = function argToNum(argument){
 
   var returnValue =  Number(argument);
   return returnValue;
 
 }
+
+module.exports = B;
